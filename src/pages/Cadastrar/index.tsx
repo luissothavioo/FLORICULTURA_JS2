@@ -5,35 +5,38 @@ export function Cadastrar() {
         <S.Section>
             <form>
                 <fieldset>
-                    <legend> Cadastrar </legend>
+                    <legend> CADASTRAR </legend>
 
                     <label>
-                        Nome:<input type="text" name="nome" placeholder="Seu Nome" />
-                    </label>
-
-                    <label>
-                        E-mail:
+                        E-MAIL:
+                        <br />
                         <input type="email" name="email" placeholder="name@email" />
                     </label>
-
-                    <label> 
-                        Sexo
+                    <label>
+                        SENHA:
                         <br />
-                        <input type="radio" name="sexo" id="masc" value="Masculino" />
-                        <label className='opc' for="masc"> Masculino </label>
-                        <br />
-                        <input type="radio" name="sexo" id="fem" value="Feminino" />
-                        <label className='opc' for="fem"> Feminino </label>
-                        <br />
-                        <input type="radio" name="sexo" id="non" value="Nao Binario" />
-                        <label className='opc' for="non"> Nao Binário </label>
-                        <br />
-                        <input type="radio" name="sexo" id="outro" value="Outro" />
-                        <label className='opc' for="outro"> Outro </label>
+                        <input type="password" name="nome" placeholder= "sua senha" />
                     </label>
 
+                    <br />
                     <label>
-                        <label > Estado/Cidade </label>
+                        NOME:
+                        <br />
+                        <input type="text" name="nome" placeholder= "seu nome" />
+                    </label>               
+                    <label> 
+                        SEXO:
+                        <br />
+                        <select name="sexo" id="">
+                            <option value=""></option>
+                            <option value="1">masculino</option>
+                            <option value="2">feminino</option>
+                            <option value="3">não-binário</option>
+                            <option value="4">outro</option>
+                        </select>
+                    </label>
+                    <label>
+                        ESTADO/CIDADE:
                         <br />
                         <select name="estado" id="">
                             <option value=""></option>
@@ -65,13 +68,16 @@ export function Cadastrar() {
                             <option value="25">SE</option>
                             <option value="26">TO</option>
                         </select>
+                        <br />
                         <input type="text" name="cidade" placeholder="São Paulo" />
                     </label>
 
-                    <label>
-                        <input className='botao' type="submit" value="Enviar" />
-                        <input className='botao' type="reset" value="Limpar" />
+                    <label className='bot'>
+                        <input className='botao' type="reset" value="LIMPAR" />
+                        <input className='botao' type="submit" value="ENVIAR" />
                     </label>
+
+                    <a href="Entrar">Já possui cadastro? Login</a>
                 </fieldset>
             </form>
         </S.Section>

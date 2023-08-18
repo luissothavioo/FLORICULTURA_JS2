@@ -1,6 +1,20 @@
 import styled from 'styled-components'
 import {colors} from "../../styles/GlobalStyle"
 
+export const Pesq = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  label {
+    padding: 2rem 0 0 0;
+  }
+  input {
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    border-radius: 1rem;
+    border-width: 1px;
+    background-color: #e6e6e6;
+  }
+`
 export const Section = styled.section`
   background-color: ${colors.white};
   

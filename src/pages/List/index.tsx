@@ -4,14 +4,22 @@ import { ComponentCard } from '../../components'
 
 export function List() {
   return (
-    <S.Section>
-      {dados.map(item => (
-        <ComponentCard
-          key={item.id}
-          nome={item.nome}
-          Image={item.Image}
-        />
-      ))}
-    </S.Section>
+    <>
+      <S.Pesq>
+        <label>
+          <input type="text" name="email" placeholder="digite a planta" />
+        </label>
+      </S.Pesq>
+
+      <S.Section>
+        {dados.map(item => (
+          <ComponentCard
+            key={item.id}
+            nome={item.nome}
+            Image={item.Image}
+          />
+        ))}
+      </S.Section>
+    </>
   )
 }
