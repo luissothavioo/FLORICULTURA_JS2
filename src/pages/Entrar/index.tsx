@@ -1,7 +1,14 @@
 import * as S from './styles'
+import Fundo from "../../assets/FUNDO.png"
 
 export function Entrar() {
     return (
+        <section style={{
+            height: '83vh',
+            backgroundImage: `url(${Fundo})`,
+            backgroundSize: 'cover',
+          }}>
+      
         <S.Section>
             <form>
                 <fieldset>
@@ -28,5 +35,6 @@ export function Entrar() {
                 </fieldset>
             </form>
         </S.Section>
+        </section>
     )
 }

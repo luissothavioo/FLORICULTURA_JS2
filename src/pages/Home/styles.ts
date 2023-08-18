@@ -48,6 +48,10 @@ export const Section = styled.section`
       padding: 0.4rem;
     }
   }
+  
+  @media (max-width: 840px) {
+    grid-template-columns: auto;
+  }
 ` 
 
 

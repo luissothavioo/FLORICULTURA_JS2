@@ -8,6 +8,7 @@ export function List() {
       <S.Pesq>
         <label>
           <input type="text" name="email" placeholder="digite a planta" />
+          <input className="botao" type="submit" value="ENVIAR" />
         </label>
       </S.Pesq>
 

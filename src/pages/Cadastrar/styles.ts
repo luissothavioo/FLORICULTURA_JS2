@@ -31,7 +31,8 @@ export const Section = styled.section`
         padding: 3px 5rem 3px 1rem;
         border-radius: 1rem;
         border-width: 1px;
-        background-color: #e6e6e6;
+        background-color: 
+    margin-bottom: 0rem;#e6e6e6;
     }
     select {
         border-radius: 1rem;

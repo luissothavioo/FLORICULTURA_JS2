@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components"
+import planta1 from "../assets/planta1.png"
 
 export const colors = {
   primary: "#A91016",
@@ -18,7 +19,6 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     background-color: ${colors.white};
-
   }
 `
 
