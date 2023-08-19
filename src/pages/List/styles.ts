@@ -14,10 +14,11 @@ export const Pesq = styled.section`
     border-radius: 1rem;
     border-width: 1px;
     background-color: #e6e6e6;
+    font-size: 1.5rem;
   }
   input.botao {
-    height: 2rem;
-    width: 6rem;
+    height: auto;
+    width: auto;
 
     border-color: ${colors.primary};
     background-color: ${colors.primary_light};
@@ -25,7 +26,7 @@ export const Pesq = styled.section`
 
     border-radius: 2rem;
 
-    font-size: 0.8rem;
+    font-size: 1.5rem;
     font-weight: bolder;
     cursor: pointer;
 
@@ -36,7 +37,7 @@ export const Pesq = styled.section`
 export const Section = styled.section`
   background-color: ${colors.white};
   
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 2rem;

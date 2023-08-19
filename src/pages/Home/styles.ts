@@ -5,9 +5,8 @@ export const Section = styled.section`
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  padding: 3rem;
-  gap: 5rem;
-  min-height: calc(100vh - 10rem);
+  padding-top: 5rem;
+  gap: 3rem;
 
   img {
     width: 50%;
@@ -53,5 +52,32 @@ export const Section = styled.section`
     grid-template-columns: auto;
   }
 ` 
-
+export const Board = styled.section`
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  div {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    background: rgb(168, 15, 21);
+    background: linear-gradient(220deg, rgba(168, 15, 21, 0.9) 29%, rgba(215, 73, 79, 0.8) 100%);
+    border-radius: 2rem;
+    height: 253px;
+    width: 810px;
+  }
+  img {
+    height: 250px;
+    width: auto;
+    padding-left: 4rem;
+  }
+  h2 {
+    font-family: "Gravitas One";
+    font-size: 45px;
+    color: #300507;
+    padding: 2rem;
+    pointer-events: none;
+    padding-top: 2.5rem;
+  }
+`
 

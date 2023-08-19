@@ -16,6 +16,7 @@ export const Section = styled.section`
         width: 22rem;
         height: 20rem;
         justify-content: center;
+        backdrop-filter: blur(20px);
     }
     legend {
         color: ${colors.primary};

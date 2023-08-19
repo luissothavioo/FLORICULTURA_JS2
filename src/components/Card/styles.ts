@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Aside = styled.aside`
   
   article {
-    background-color: rgba(173, 48, 48, 0.623);
+    background: radial-gradient(rgb(255, 141, 141), rgb(174, 44, 44));
     border-radius: 1rem;
     padding-top: 1rem;
     padding-bottom: 2rem;

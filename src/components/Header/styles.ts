@@ -15,7 +15,7 @@ export const Header = styled.header`
     width: 2rem;
     padding: 0.5rem 0rem 0.5rem 5rem;
     img {
-      width: 4rem;
+      width: 3.6rem;
     }
   }
 `

@@ -14,8 +14,9 @@ export const Section = styled.section`
         padding: 1rem;
         border-radius: 2rem;
         width: 22rem;
-        height: 36rem;
-        justify-content: center;
+        height: 38rem;
+        justify-content: center;       
+        backdrop-filter: blur(20px);
     }
     legend {
         color: ${colors.primary};
@@ -25,7 +26,6 @@ export const Section = styled.section`
 
     label {
        padding-bottom: 1rem;
-
     }
     input {
         padding: 3px 5rem 3px 1rem;
