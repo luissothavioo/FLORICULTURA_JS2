@@ -52,3 +52,19 @@ export const NavBar = styled.nav`
   }
 
 `
+
+export const ComponentHamburguer = styled.section`
+  aside {
+    display: none;
+  }
+  @media (max-width: 840px) {
+    aside {
+      display: block;
+    }
+    ul {
+      display: none;
+    }
+    grid-template-columns: auto auto auto;
+    
+  }
+`
