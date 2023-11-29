@@ -21,7 +21,7 @@ export function Footer() {
       
       <aside>
         <a href="/" target="_blank">
-          <img class="logo" src={Logo} alt="Logo" />
+          <img className="logo" src={Logo} alt="Logo" />
         </a>
       </aside>
     </S.Footer>

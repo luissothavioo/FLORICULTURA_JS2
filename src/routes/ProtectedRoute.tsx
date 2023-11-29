@@ -1,4 +1,3 @@
-import React from 'react';
 import Loading from '../components/Loading';
 import { useAuth } from '../hooks/authHook'
 import { useEffect, useState } from 'react'

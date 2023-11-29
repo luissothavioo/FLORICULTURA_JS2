@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components"
 //import planta1 from "../assets/planta1.png"
 
 export const colors = {
