@@ -1,6 +1,6 @@
 import Fundo from "../../assets/FUNDO.png"
 import { FormEvent, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaKey } from "react-icons/fa";
 import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
@@ -40,13 +40,13 @@ export function Cadastrar() {
 
   return (
     <section style={{
-      height:'83vh',
+      height: '83vh',
       backgroundImage: `url(${Fundo})`,
       backgroundSize: 'cover',
     }}>
-    
-    <S.Section>
-      <form method="post" onSubmit={handleSubmit}>
+
+      <S.Section>
+        <form method="post" onSubmit={handleSubmit}>
           <legend> CADASTRAR </legend>
 
           <label htmlFor="email">E-MAIL</label>
@@ -57,9 +57,7 @@ export function Cadastrar() {
               value={formData?.email}
             />
           </div>
-          <br />
-
-          <label htmlFor="senha">Senha</label>
+          <label htmlFor="senha">SENHA</label>
           <div>
             <FaKey />
             <input type="password" name="senha" id="senha" placeholder="Senha"
@@ -67,16 +65,14 @@ export function Cadastrar() {
               value={formData?.password}
             />
           </div>
-          <br />
-
-          <label htmlFor="nome">Nome</label>
+          <label htmlFor="nome">NOME</label>
           <div>
             <BsFillPersonFill />
             <input type="text" name="name" id="nome" placeholder="Nome"
               onChange={(e) => handleChange({ name: e.target.value })}
               value={formData?.name}
             />
-          </div>              
+          </div>
 
           <label className='bot'>
             <input className='botao' type="reset" value="LIMPAR" />
@@ -84,12 +80,11 @@ export function Cadastrar() {
           </label>
 
           <p>
-            Já possui conta? <Link to="/login">Faça o login</Link>
+            Já possui conta? <a href="/login">Faça o login </a>
           </p>
-      </form>
-      
+        </form>
+
       </S.Section>
     </section>
   );
-};
-
+}

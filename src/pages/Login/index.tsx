@@ -1,5 +1,6 @@
+import Fundo from "../../assets/FUNDO.png"
 import { FormEvent, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { FaKey } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { toast } from "react-toastify";
@@ -36,31 +37,44 @@ export function Login() {
   }
 
   return (
-    <S.Section>
-      <h1>Login</h1>
-      <form method="post" onSubmit={handleSubmit}>
-        <label htmlFor="email">E-mail</label>
-        <div>
-          <MdEmail />
-          <input type="email" name="email" id="email" placeholder="E-mail"
-            onChange={(e) => handleChange({ email: e.target.value })}
-            value={formData?.email}
-          />
-        </div>
-        <label htmlFor="senha">Senha</label>
-        <div>
-          <FaKey />
-          <input type="password" name="senha" id="senha" placeholder="Senha"
-            onChange={(e) => handleChange({ password: e.target.value })}
-            value={formData?.password}
-          />
-        </div>
-        <p>
-          Não possui conta? <Link to="/cadastrar">Cadastre-se</Link>
-          <button type="submit">Entrar</button>
-        </p>
-      </form>
-    </S.Section>
-  );
-};
+    <section style={{
+      height: '83vh',
+      backgroundImage: `url(${Fundo})`,
+      backgroundSize: 'cover',
+    }}>
 
+      <S.Section>
+        <form method="post" onSubmit={handleSubmit}>
+          <legend>ENTRAR</legend>
+
+          <label htmlFor="email">E-MAIL</label>
+          <div>
+            <MdEmail />
+            <input type="email" name="email" id="email" placeholder="E-mail"
+              onChange={(e) => handleChange({ email: e.target.value })}
+              value={formData?.email}
+            />
+          </div>
+
+          <label htmlFor="senha">SENHA</label>
+          <div>
+            <FaKey />
+            <input type="password" name="senha" id="senha" placeholder="Senha"
+              onChange={(e) => handleChange({ password: e.target.value })}
+              value={formData?.password}
+            />
+          </div>
+
+          <label className='bot'>
+            <input className='botao' type="submit" value="ENTRAR" />
+          </label>
+
+          <p>
+            Não possui conta? <a href="/cadastrar">Faça o cadastro </a>
+          </p>
+
+        </form>
+      </S.Section>
+    </section>
+  );
+}
